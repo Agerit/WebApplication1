@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "CreateUser";
+}
+
+<h1>CreateUser</h1>
+
+<form asp-action="CreateUser" asp-controller="Home" method="post">
+    <div asp-validation-summary="All" style="color:darkred"></div>
+    <input type="text" name="name" />
+    <input type="text" name="age" />
+    <input type="submit" value="Submit" />
+</form>
